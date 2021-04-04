@@ -64,7 +64,7 @@ const HeroContainer = styled.div`
     display: flex;
     align-items: flex-end;
     width: 1200px;
-    height: 80%;
+    height: 50%;
   }
 
   .buttons .wp-block-button__link {

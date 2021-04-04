@@ -8,10 +8,10 @@ const About = () => {
       <AboutContainer>
         <div className="container pt-5 pb-5">
           <div className="row ">
-            <div className="col-6">
+            <div className="col">
               <h1 className="">Tko smo?</h1>
             </div>
-            <div className="col-6">
+            <div className="col">
               <h3>Uptown Records Zagreb Croatia</h3>
 
               <p>
@@ -51,6 +51,14 @@ const AboutContainer = styled.div`
   background-attachment: fixed;
   background-position: 50% 50%;
   margin: 0 auto;
+  @media (max-width: 430px) {
+    .col {
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      width: auto;
+      max-width: 100%;
+    }
+  }
 
   h1 {
     font-size: 4rem;

@@ -74,15 +74,20 @@ const TopNavContainer = styled.nav`
   @media (max-width: 1230px) {
     padding: 15px;
   }
+  
   .navlink {
     list-style: none;
     display: inline-block;
     margin-bottom:0rem;
+    text-align:right;
+    
+    
     li {
       display:inline-block;
       padding-left:2rem;
       h3{
         line-height:0rem;
+        text-align:center;
       }
 
     
@@ -90,6 +95,7 @@ const TopNavContainer = styled.nav`
     }
     ]
   }
+
   @media (max-width: 400px) {
     .mobhide {
       display: none;

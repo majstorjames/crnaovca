@@ -5,20 +5,22 @@ import Error404 from "../../images/404.svg";
 
 const description404 = (
   <>
-    <strong>Denne siden kan ikke bli funnet{" "}</strong>
+    <strong> </strong>
     <span role="img" aria-label="confused face">
       😕
     </span>
     <br></br>
-    <button className="wp-block-button__link"><Link link="/">Tilbake til hjem</Link></button>
+    <button className="wp-block-button__link">
+      <Link link="/">home</Link>
+    </button>
   </>
 );
 
 const description = (
   <>
     Don&apos;t panic! Seems like you encountered an error. If this persists,
-    <a href="https://example.com"> let us know </a> or try refreshing
-    your browser.
+    <a href="https://example.com"> let us know </a> or try refreshing your
+    browser.
   </>
 );
 
@@ -26,7 +28,7 @@ const description = (
 const Page404 = ({ state }) => {
   const data = state.source.get(state.router.link);
 
-  const title = "Oops! Noe gikk galt";
+  const title = "Oops!";
 
   return (
     <Container>

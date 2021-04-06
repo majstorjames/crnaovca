@@ -53,7 +53,7 @@ const Theme = ({ state }) => {
             --menutogglehover: ${mode === "light" ? "#148fa8" : "#80bbda"};
             --menutogglehoverclose: ${mode === "light" ? "#000" : "#80bbda"};
             --cookiebar: ${mode === "light" ? "#fff" : "#121212"};
-            --cookiebarbutton: ${mode === "light" ? "#fff" : "#fff"};
+            --cookiebarbutton: ${mode === "light" ? "#fff" : "#042a4e"};
             --cookiebartext: ${mode === "light" ? "#fff" : "#148fa8"};
             --code: ${mode === "light" ? "#121212" : "#343434"};
             --transition: 800ms;

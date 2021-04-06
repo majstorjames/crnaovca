@@ -15,7 +15,7 @@ const Hero = () => {
                 <button className="wp-block-button__link">Portfolio</button>
               </Link>
               <Link link="/kontakt/">
-                <button className="wp-block-button__link">kontakt</button>
+                <button className="wp-block-button__link">Kontakt</button>
               </Link>
             </div>
           </div>

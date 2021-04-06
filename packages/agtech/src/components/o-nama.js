@@ -54,7 +54,7 @@ const AboutContainer = styled.div`
   background-position: -200% 0%;
   margin: 0 auto;
   @media (max-width: 430px) {
-    .col {
+    .col-6 {
       -ms-flex: 0 0 auto;
       flex: 0 0 auto;
       width: auto;

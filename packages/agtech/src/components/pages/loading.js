@@ -22,7 +22,7 @@ const Loading = () => (
 export default Loading;
 
 const bar = (index) => css`
-  background-color: #aa0019;
+  background-color: #042a4e;
   width: 4px;
   height: 24px;
   margin: 3px;

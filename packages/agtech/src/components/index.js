@@ -49,14 +49,14 @@ const Theme = ({ state }) => {
             --border: ${mode === "light" ? "#e0e0e0" : "#333"};
             --title: ${mode === "light" ? "#148fa8" : "#148fa8"};
             --link: ${mode === "light" ? "#148fa8" : "#80bbda"};
-            --button: ${mode === "light" ? "#148fa8" : "#1E1E1E"};
+            --button: ${mode === "light" ? "#148fa8" : "#042a4e"};
             --menutogglehover: ${mode === "light" ? "#148fa8" : "#80bbda"};
             --menutogglehoverclose: ${mode === "light" ? "#000" : "#80bbda"};
-            --cookiebar: ${mode === "light" ? "#fff" : "#148fa8"};
-            --cookiebarbutton: ${mode === "light" ? "#148fa8" : "#fff"};
+            --cookiebar: ${mode === "light" ? "#fff" : "#121212"};
+            --cookiebarbutton: ${mode === "light" ? "#fff" : "#fff"};
             --cookiebartext: ${mode === "light" ? "#fff" : "#148fa8"};
             --code: ${mode === "light" ? "#121212" : "#343434"};
-            --transition: 500ms;
+            --transition: 800ms;
           }
         `}
       />
@@ -208,13 +208,13 @@ const globalStyles = css`
     }
   }
   .CookieConsent {
-    width: 100% !important;
-    bottom: 2rem !important;
+    width: 90% !important;
+
     left: auto !important;
     right: 2rem !important;
     border-radius: 12px;
     justify-content: flex-end !important;
-    box-shadow: rgb(0 0 0 / 16%) 0px 2px 4px !important;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px !important;
   }
 `;
 

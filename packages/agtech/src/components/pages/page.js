@@ -23,9 +23,11 @@ const Page = ({ state, actions, libraries }) => {
 
   // Load the post, but only if the data is ready.
   return data.isReady ? (
-      <Content>
+    <Content>
+      <div className="container p-5">
         <Html2React html={page.content.rendered} />
-      </Content>
+      </div>
+    </Content>
   ) : null;
 };
 

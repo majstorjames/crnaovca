@@ -32,9 +32,22 @@ const TopNavbar = ({ state }) => {
             </li>
             <li>
               <Link link="/o-nama/">
-                <h3>O Nama</h3>
+                <h3>
+                  <span className="circle red"></span>O Nama
+                </h3>
               </Link>
             </li>
+            <li>
+              <Link link="/usluge/">
+                <h3>Usluge</h3>
+              </Link>
+            </li>
+            <li>
+              <Link link="/portfolio/">
+                <h3>Portfolio</h3>
+              </Link>
+            </li>
+
             <li>
               <Link link="/kontakt/">
                 <h3>Kontakt</h3>
@@ -75,6 +88,9 @@ const TopNavContainer = styled.nav`
     padding: 15px;
   }
   
+  h3:hover {
+    color:#148fa8;
+  }
   .navlink {
     list-style: none;
     display: inline-block;

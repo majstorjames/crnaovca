@@ -14,6 +14,7 @@ import FontFace from "./styles/font-face";
 import gutenbergStyle from "./styles/gutenberg/style.min.css";
 import gutenbergTheme from "./styles/gutenberg/theme.min.css";
 import BootstrapCss from "./styles/bootstrap.css";
+import SwiperCss from "./styles/swiper-bundle.css";
 import customStyle from "./styles/style";
 import TopNavbar from "./header/topnavbar";
 
@@ -31,6 +32,7 @@ const Theme = ({ state }) => {
       {/* Add some global styles for the whole site, like body or a's. 
       Not classes here because we use CSS-in-JS. Only global HTML tags. */}
       <Global styles={css(BootstrapCss)} />
+      <Global styles={css(SwiperCss)} />
       <Global styles={css(gutenbergStyle)} />
       <Global styles={css(gutenbergTheme)} />
       <Global styles={customStyle} />
@@ -41,18 +43,18 @@ const Theme = ({ state }) => {
             --text: ${mode === "light" ? "#212121" : "#fff"};
             --darktext: ${mode === "light" ? "#fff" : "#fff"};
             --background: ${mode === "light" ? "#fff" : "#121212"};
-            --menubackground: ${mode === "light" ? "#AA0019" : "#121212"};
+            --menubackground: ${mode === "light" ? "#148fa8" : "#121212"};
             --postbackground: ${mode === "light" ? "#F2F3FC" : "#1E1E1E"};
             --darkbackground: ${mode === "light" ? "#042a4e" : "#1E1E1E"};
             --border: ${mode === "light" ? "#e0e0e0" : "#333"};
-            --title: ${mode === "light" ? "#AA0019" : "#AA0019"};
-            --link: ${mode === "light" ? "#AA0019" : "#80bbda"};
-            --button: ${mode === "light" ? "#AA0019" : "#1E1E1E"};
-            --menutogglehover: ${mode === "light" ? "#AA0019" : "#80bbda"};
+            --title: ${mode === "light" ? "#148fa8" : "#148fa8"};
+            --link: ${mode === "light" ? "#148fa8" : "#80bbda"};
+            --button: ${mode === "light" ? "#148fa8" : "#1E1E1E"};
+            --menutogglehover: ${mode === "light" ? "#148fa8" : "#80bbda"};
             --menutogglehoverclose: ${mode === "light" ? "#000" : "#80bbda"};
-            --cookiebar: ${mode === "light" ? "#fff" : "#AA0019"};
-            --cookiebarbutton: ${mode === "light" ? "#AA0019" : "#fff"};
-            --cookiebartext: ${mode === "light" ? "#fff" : "#AA0019"};
+            --cookiebar: ${mode === "light" ? "#fff" : "#148fa8"};
+            --cookiebarbutton: ${mode === "light" ? "#148fa8" : "#fff"};
+            --cookiebartext: ${mode === "light" ? "#fff" : "#148fa8"};
             --code: ${mode === "light" ? "#121212" : "#343434"};
             --transition: 500ms;
           }
@@ -206,7 +208,7 @@ const globalStyles = css`
     }
   }
   .CookieConsent {
-    width: 400px !important;
+    width: 100% !important;
     bottom: 2rem !important;
     left: auto !important;
     right: 2rem !important;

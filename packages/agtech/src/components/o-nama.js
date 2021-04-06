@@ -6,20 +6,21 @@ const About = () => {
   return (
     <>
       <AboutContainer>
-        <div className="container pt-5 pb-5">
+        <div className="container pt-5">
           <div className="row ">
-            <div className="col">
-              <h1 className="">Tko smo?</h1>
+            <div className="col-6">
+              <h1 className="pb-5">Zašto Crna Ovca?</h1>
+              <h3>
+                <i>Skalabilna rješenja koja si mogu priuštiti mala poduzeća</i>
+              </h3>
             </div>
-            <div className="col">
-              <h3>Uptown Records Zagreb Croatia</h3>
-
+            <div className="col-6">
               <p>
-                S dugogodišnjim iskustvom na području glazbene produkcije i
-                menadžmenta skupina glazbenika i glazbenih promotora odlučila je
-                osnovati nezavisnu diskografsku kuću kako bi unijeli potrebne
-                svježine na domaći glazbeni teren. Mi smo Uptown Music Records i
-                usudimo se biti drugačiji od drugih.
+                Web dizajn obuhvaća mnogo različitih vještina i disciplina u
+                izradi i održavanju web stranica. Različita područja web dizajna
+                uključuju web grafički dizajn; UI i UX dizajn; autorski rad i
+                optimizacija za tražilice. Za male tvrtke presudno je posaditi i
+                proširiti svoju digitalnu prisutnost.
               </p>
               <div className="buttons">
                 <Link link="/o-nama/">
@@ -47,9 +48,10 @@ const AboutContainer = styled.div`
   width: 100%;
   max-width: 100vw;
   background: url();
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
-  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: -200% 0%;
   margin: 0 auto;
   @media (max-width: 430px) {
     .col {
@@ -62,11 +64,11 @@ const AboutContainer = styled.div`
 
   h1 {
     font-size: 4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     font-weight: 600;
     width: 100%;
     max-width: 620px;
-    text-align: center !important;
+    text-align: left !important;
   }
   p {
     font-size: 24px;
@@ -105,45 +107,4 @@ const AboutContainer = styled.div`
     h1 {
       font-size: 40px;
     }
-    /* Animation */
-
-    @keyframes fadeInUp {
-      from {
-        transform: translate3d(0, 40px, 0);
-      }
-
-      to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
-      }
-    }
-
-    @-webkit-keyframes fadeInUp {
-      from {
-        transform: translate3d(0, 40px, 0);
-      }
-
-      to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1;
-      }
-    }
-
-    .animated {
-      animation-duration: 1s;
-      animation-fill-mode: both;
-      -webkit-animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-    }
-
-    .animatedFadeInUp {
-      opacity: 0;
-    }
-
-    .fadeInUp {
-      opacity: 0;
-      animation-name: fadeInUp;
-      -webkit-animation-name: fadeInUp;
-    }
-  }
 `;

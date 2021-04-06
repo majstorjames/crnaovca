@@ -32,6 +32,15 @@ const MenuModal = ({ state }) => {
             <Link className="" link="/">
               <h1>Home</h1>
             </Link>
+            <Link className="" link="/o-nama/">
+              <h1>O Nama</h1>
+            </Link>
+            <Link className="" link="/usluge/">
+              <h1>Usluge</h1>
+            </Link>
+            <Link className="" link="/portfolio/">
+              <h1>Portfolio</h1>
+            </Link>
             <Link className="" link="/kontakt/">
               <h1>Kontakt</h1>
             </Link>
@@ -41,22 +50,22 @@ const MenuModal = ({ state }) => {
             <Link link="https://www.linkedin.com/company" target="_blank">
               <img src={linkedin} />
             </Link>
-            <Link link="https://www.facebook.com/" target="_blank">
+            <Link link="https://www.facebook.com/crna-ovca/" target="_blank">
               <img src={facebook} />
             </Link>
-            <Link link="https://www.instagram.com/" target="_blank">
+            <Link link="https://www.instagram.com/crnaovca.zg/" target="_blank">
               <img src={instagram} />
             </Link>
             <Link link="https://www.github.com/" target="_blank">
               <img src={github} />
             </Link>
-            <Link link="mailto:info@uptownrecords.com">
+            <Link link="mailto:info@crna-ovca.com">
               <img src={email} />
             </Link>
           </div>
         </BigMenuInner>
         <div className="menu-footer">
-          <p className="copyright">© 2021 Uptown Records</p>
+          <p className="copyright">© 2021 Crna Ovca Digitalni Marketing</p>
           <p className="copyright align-right">
             <Link link="/izjava-o-privatnosti/">izjava o privatnosti</Link>
           </p>

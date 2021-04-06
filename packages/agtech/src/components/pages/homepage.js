@@ -4,6 +4,7 @@ import List from "../list";
 import Hero from "../hero";
 import ONama from "../o-nama";
 import Services from "../usluge";
+import Artists from "../artists";
 
 //import Image from "@frontity/components/image";
 
@@ -28,6 +29,7 @@ const HomePage = ({ state, actions, libraries }) => {
       <Hero />
       <ONama />
       <Services />
+
       <Html2React html={homepage.content.rendered} />
     </Content>
   ) : null;

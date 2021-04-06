@@ -8,11 +8,11 @@ const Hero = () => {
       <HeroContainer>
         <div className="hero-inner">
           <div>
-            <h1>Uptown Records Zagreb Croatia</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <h1>CRNA OVCA DIGITALNI MARKETING</h1>
+            <p>Pristupačne web stranice i web trgovine za vas, male tvrtke.</p>
             <div className="buttons">
-              <Link link="/artists/">
-                <button className="wp-block-button__link">Artists</button>
+              <Link link="/portfolio/">
+                <button className="wp-block-button__link">Portfolio</button>
               </Link>
               <Link link="/kontakt/">
                 <button className="wp-block-button__link">kontakt</button>
@@ -29,7 +29,7 @@ export default connect(Hero);
 
 const HeroContainer = styled.div`
   display: flex;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 50px);
   min-height: calc(100vh - 80px);
   align-items: center;
   justify-content: center;
@@ -40,7 +40,7 @@ const HeroContainer = styled.div`
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 1)
     ),
-    url(https://admin.crna-ovca.com/wp-content/uploads/2021/03/background-mix.jpg);
+    url(https://admin.crna-ovca.com/wp-content/uploads/2021/04/crna-ovca-hero-min.jpg);
   background-size: cover;
   background-position: 50% 50%;
   margin: 0 auto;
@@ -64,7 +64,7 @@ const HeroContainer = styled.div`
     display: flex;
     align-items: flex-end;
     width: 1200px;
-    height: 50%;
+    height: 8yy0%;
   }
 
   .buttons .wp-block-button__link {
@@ -90,7 +90,7 @@ const HeroContainer = styled.div`
         rgba(0, 0, 0, 0.75),
         rgba(0, 0, 0, 0.75)
       ),
-      url(https://admin.crna-ovca.com/wp-content/uploads/2021/03/background-mix.jpg);
+      url(https://admin.crna-ovca.com/wp-content/uploads/2021/04/crna-ovca-hero-min.jpg);
     background-size: cover;
     background-position: 60% 50%;
     h1 {

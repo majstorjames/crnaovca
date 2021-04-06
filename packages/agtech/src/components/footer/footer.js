@@ -51,8 +51,8 @@ const Footer = ({ state }) => {
                     O nama
                   </Link>
                 </li>
-                <Link className="widget-list-link" link="/artists/">
-                  Artists
+                <Link className="widget-list-link" link="/portfolio/">
+                  Portfolio
                 </Link>
               </li>
               <li>

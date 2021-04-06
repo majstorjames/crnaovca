@@ -27,6 +27,8 @@
     "@frontity/wp-source": "^1.11.2",
     "dayjs": "^1.10.4",
     "frontity": "^1.14.2",
-    "react-cookie-consent": "^6.2.3"
+    "react-cookie-consent": "^6.2.3",
+    "react-spotify-player": "^1.0.4",
+    "swiper": "^6.5.3"
   }
 }

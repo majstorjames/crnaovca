@@ -9,21 +9,21 @@ const Services = () => {
       <ServicesContainer>
         <div className="container-fluid p-5">
           <div className="container pt-5 pb-5">
-            <h1 className="pb-5 text-center">Naše usluge</h1>
+            <h1 className="pb-5 text-center">Što radimo?</h1>
 
-            <div className="row pb-5">
-              <div className="col">
+            <div className="row pb-5 pt-5">
+              <div className="col pb-5">
                 <WebIcon size="50%" />
-
                 <h3 className="pt-3">Web Dizajn</h3>
               </div>
-              <div className="col">
+
+              <div className="col pb-5">
                 <SocialIcon size="50%" />
                 <h3 className="pt-3">Social media</h3>
               </div>
-              <div className="col">
+              <div className="col pb-5">
                 <SeoIcon size="50%" />
-                <h3 className="pt-3"> SEO</h3>
+                <h3 className="pt-3"> SEO usluge</h3>
               </div>
             </div>
           </div>

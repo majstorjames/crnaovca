@@ -24,8 +24,12 @@ const Page = ({ state, actions, libraries }) => {
   // Load the post, but only if the data is ready.
   return data.isReady ? (
     <Content>
-      <div className="container p-5">
-        <Html2React html={page.content.rendered} />
+      <div className="container">
+        <div className="row">
+          <div className="col-auto">
+            <Html2React html={page.content.rendered} />
+          </div>
+        </div>
       </div>
     </Content>
   ) : null;
@@ -40,6 +44,26 @@ const Content = styled.div`
     width: 100%;
     max-width: 1200px;
     margin: 0px auto;
+  }
+
+  .col-auto {
+    margin: auto;
+  }
+  .wp-block-column {
+    padding: 15px;
+  }
+  .wp-block-column:not(:first-of-type) {
+    margin-left: 0px;
+  }
+  input.wpcf7-form-control,
+  .wpcf7-textarea {
+    width: 100% !important;
+  }
+  .wpcf7-submit {
+    background-color: #148fa8;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
   }
   @media (max-width: 600px) {
     h1 {
@@ -57,7 +81,7 @@ const Content = styled.div`
       max-width: 1230px;
       padding-right: 15px;
       padding-left: 15px;
-      width: auto;
+      width: 100%;
     }
   }
 `;

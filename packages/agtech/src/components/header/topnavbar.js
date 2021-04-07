@@ -85,7 +85,7 @@ const TopNavContainer = styled.nav`
     display: flex;
   }
   @media (max-width: 1230px) {
-    padding: 15px;
+    padding: 20px;
   }
   
   h3:hover {
@@ -123,5 +123,7 @@ const Logo = styled.div`
   img {
     width: 150px;
     height: 50px;
+    margin-top: -20px;
+    margin-bottom: -20px;
   }
 `;

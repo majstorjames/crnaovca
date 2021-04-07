@@ -104,11 +104,11 @@ const BigMenu = styled.div`
     img {
       width: 150px;
       height: 50px;
-      margin-top: -15px;
+      margin-top: -10px;
     }
 
     @media (max-width: 1230px) {
-      padding: 15px;
+      padding: 15px 15px 15px 20px;
     }
   }
   .menu-footer {

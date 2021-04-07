@@ -20,6 +20,7 @@
     "@aamodtgroup/agtech": "./packages/agtech",
     "@aamodtgroup/frontity-contact-form-7": "^0.1.0",
     "@frontity/core": "^1.11.0",
+    "@frontity/google-analytics": "^2.0.0",
     "@frontity/google-tag-manager-analytics": "^1.2.1",
     "@frontity/head-tags": "^1.1.1",
     "@frontity/html2react": "^1.6.1",

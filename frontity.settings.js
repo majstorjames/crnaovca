@@ -27,16 +27,17 @@ const settings = {
       },
     },
     {
-      name: "@frontity/google-tag-manager-analytics",
+      name: "@frontity/google-analytics",
       state: {
-        googleTagManagerAnalytics: {
-          containerId: "xxxx",
+        googleAnalytics: {
+          trackingId: "G-HTSBV544VB",
         },
       },
     },
     "@frontity/tiny-router",
     "@frontity/html2react",
     "@frontity/yoast",
+
     "@aamodtgroup/frontity-contact-form-7",
   ],
 };

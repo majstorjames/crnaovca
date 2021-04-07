@@ -85,7 +85,7 @@ const Footer = ({ state }) => {
                   className="widget-list-link"
                   target="_blank"
                   rel="nofollow noopener"
-                  link="https://www.linkedin.com/company/aamodtgroup/"
+                  link="https://www.linkedin.com/company/"
                 >
                   LinkedIn
                 </Link>
@@ -95,7 +95,7 @@ const Footer = ({ state }) => {
                   className="widget-list-link"
                   target="_blank"
                   rel="nofollow noopener"
-                  link="https://www.facebook.com/aamodtgroup/"
+                  link="https://www.facebook.com/"
                 >
                   Facebook
                 </Link>
@@ -105,7 +105,7 @@ const Footer = ({ state }) => {
                   className="widget-list-link"
                   target="_blank"
                   rel="nofollow noopener"
-                  link="https://www.instagram.com/aamodtgroup/"
+                  link="https://www.instagram.com/"
                 >
                   Instagram
                 </Link>
@@ -116,7 +116,9 @@ const Footer = ({ state }) => {
         <hr className="divider div2" />
         <div className="copyright-grid">
           <div className="column1">
-            <p className="copyright">© {thisYear} Uptown Records</p>
+            <p className="copyright">
+              © {thisYear} Crna Ovca Digitalni Marketing
+            </p>
           </div>
           <div className="column2">
             <p className="copyright">

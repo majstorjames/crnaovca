@@ -52,9 +52,9 @@ const Theme = ({ state }) => {
             --button: ${mode === "light" ? "#148fa8" : "#042a4e"};
             --menutogglehover: ${mode === "light" ? "#148fa8" : "#80bbda"};
             --menutogglehoverclose: ${mode === "light" ? "#000" : "#80bbda"};
-            --cookiebar: ${mode === "light" ? "#fff" : "#121212"};
-            --cookiebarbutton: ${mode === "light" ? "#fff" : "#042a4e"};
-            --cookiebartext: ${mode === "light" ? "#fff" : "#148fa8"};
+            --cookiebar: ${mode === "light" ? "#fff" : "#333"};
+            --cookiebarbutton: ${mode === "light" ? "#042a4e" : "#148fa8"};
+            --cookiebartext: ${mode === "light" ? "#fff" : "#fff"};
             --code: ${mode === "light" ? "#121212" : "#343434"};
             --transition: 800ms;
           }
@@ -207,6 +207,9 @@ const globalStyles = css`
       transform: scale(1.05);
     }
   }
+  #rcc-decline-button {
+    display: none;
+  }
   .CookieConsent {
     width: 90% !important;
 
@@ -220,6 +223,7 @@ const globalStyles = css`
 
 const HeadContainer = styled.div`
   height: 81px;
+  margin-bottom: -15px;
 `;
 
 const FooterContainer = styled.div`

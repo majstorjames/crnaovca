@@ -2,7 +2,7 @@ const settings = {
   name: "aamodtgroup",
   state: {
     frontity: {
-      url: "https://admin.crna-ovca.com",
+      url: "https://crna-ovca.com",
       title: "Crna ovca digitalni marketing",
       description: "Crna Ovca | Izrada web stranica",
     },
@@ -17,12 +17,14 @@ const settings = {
         source: {
           url: "https://admin.crna-ovca.com",
           homepage: "/home",
+
           postTypes: [
             {
               type: "lokacije",
               endpoint: "lokacije",
             },
           ],
+          postsPage: "/blog",
         },
       },
     },

@@ -19,8 +19,8 @@ const settings = {
           homepage: "/home",
           postTypes: [
             {
-              type: "blog",
-              endpoint: "blog",
+              type: "lokacije",
+              endpoint: "lokacije",
             },
           ],
         },

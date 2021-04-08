@@ -20,7 +20,10 @@ const agtech = {
      */
     theme: {
       autoPrefetch: "hover",
-      menu: [],
+      menu: [
+        ["Home", "/"],
+        ["Blog", "/blog"],
+      ],
       menuUrl: "menu",
       mode: "light",
       isMobileMenuOpen: false,
@@ -44,23 +47,25 @@ const agtech = {
         state.theme.isMobileMenuOpen = false;
       },
       afterCSR: ({ state }) => {
-        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        const prefersDarkScheme = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        );
         if (window.localStorage.getItem("mode") === "light") {
-          state.theme.mode = 'light';
+          state.theme.mode = "light";
         } else if (window.localStorage.getItem("mode") === "dark") {
-          state.theme.mode = 'dark';
+          state.theme.mode = "dark";
         } else {
           if (prefersDarkScheme.matches) {
-            state.theme.mode = 'dark';
+            state.theme.mode = "dark";
           }
         }
       },
-      setLightMode: ({state}) => {
-        state.theme.mode = 'light';
+      setLightMode: ({ state }) => {
+        state.theme.mode = "light";
         window.localStorage.setItem("mode", "light");
       },
-      setDarkMode: ({state}) => {
-        state.theme.mode = 'dark';
+      setDarkMode: ({ state }) => {
+        state.theme.mode = "dark";
         window.localStorage.setItem("mode", "dark");
       },
       beforeSSR: async ({ state, actions }) => {

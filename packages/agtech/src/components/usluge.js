@@ -19,7 +19,7 @@ const Services = () => {
 
               <div className="col pb-5">
                 <SocialIcon size="50%" />
-                <h3 className="pt-3">Social media</h3>
+                <h3 className="pt-3">Društveni mediji</h3>
               </div>
               <div className="col pb-5">
                 <SeoIcon size="50%" />

@@ -55,6 +55,8 @@ const Theme = ({ state }) => {
             --cookiebar: ${mode === "light" ? "#fff" : "#333"};
             --cookiebarbutton: ${mode === "light" ? "#042a4e" : "#148fa8"};
             --cookiebartext: ${mode === "light" ? "#fff" : "#fff"};
+            --titlelink: ${mode === "light" ? "#000000" : "#c2c2c2"};
+            --figcaption: ${mode === "light" ? "#000000" : "#c2c2c2"};
             --code: ${mode === "light" ? "#121212" : "#343434"};
             --transition: 800ms;
           }
@@ -220,12 +222,16 @@ const globalStyles = css`
     box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px !important;
   }
   .wp-block-image figcaption {
-    color: #888888!important;
+    color: var(--figcaption);
     font-size: 13px;
     text-align: center;
 }
 .wp-block-columns{
   background-color:transparent!important;
+ 
+}
+.wp-block-columns a {
+  color: var(--titlelink);
 }
 
 `;

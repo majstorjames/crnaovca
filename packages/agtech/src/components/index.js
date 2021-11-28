@@ -224,9 +224,10 @@ const globalStyles = css`
     font-size: 13px;
     text-align: center;
 }
-.css-1yb98pw-props-css{
+.wp-block-columns{
   background-color:transparent!important;
 }
+
 `;
 
 const HeadContainer = styled.div`

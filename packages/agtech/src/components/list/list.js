@@ -6,18 +6,19 @@ import Pagination from "./pagination";
 const List = ({ state }) => {
   // Get the data of the current list.
   const data = state.source.get(state.router.link);
-  let title = 'Nyheter';
+  let title = "Vijesti";
+  let subtitle = "";
 
   return (
     <Container>
       {/* If the list is a blog posts, we render a title. */}
       {data.isPostArchive && (
-      <Header>
-        <div aria-hidden="true" className="wp-block-spacer cpt-spacer"></div>
-        <h1>{title}</h1>
-        <p className="cpt-p">Her kan du lese artikkler, tips og triks om det meste innen teknologi, og annet som passer seg</p>
-        <div aria-hidden="true" className="wp-block-spacer cpt-spacer2"></div>
-      </Header>
+        <Header>
+          <div aria-hidden="true" className="wp-block-spacer cpt-spacer"></div>
+          <h1>{title}</h1>
+          <p className="cpt-p">{subtitle}</p>
+          <div aria-hidden="true" className="wp-block-spacer cpt-spacer2"></div>
+        </Header>
       )}
       {/* If the list is a taxonomy, we render a title. */}
       {data.isTaxonomy && (
@@ -33,18 +34,18 @@ const List = ({ state }) => {
           Author: <b>{decode(state.source.author[data.id].name)}</b>
         </Header>
       )}
-    
+
       {/* Iterate over the items of the list. */}
       <div className="post_grid">
         <>
-        {data.items.map(({ type, id }) => {
-          const item = state.source[type][id];
-          // Render one Item component for each one.
-          return <Item key={item.id} item={item} />;
-        })}
+          {data.items.map(({ type, id }) => {
+            const item = state.source[type][id];
+            // Render one Item component for each one.
+            return <Item key={item.id} item={item} />;
+          })}
         </>
       </div>
-      
+
       <Pagination />
     </Container>
   );

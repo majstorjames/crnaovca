@@ -12,6 +12,7 @@ const TopNavbar = ({ state }) => {
   return (
     <>
       <TopNavContainer>
+        <div>
         <Logo>
           <Link link="/" alt="Forside link">
             <img
@@ -22,7 +23,8 @@ const TopNavbar = ({ state }) => {
             />
           </Link>
         </Logo>
-
+        </div>
+        <div></div>
         <div className="mobhide">
           <ul className="navlink">
             <li>
@@ -30,13 +32,7 @@ const TopNavbar = ({ state }) => {
                 <h3>Home</h3>
               </Link>
             </li>
-            <li>
-              <Link link="/o-nama/">
-                <h3>
-                  <span className="circle red"></span>O Nama
-                </h3>
-              </Link>
-            </li>
+          
             <li>
               <Link link="/usluge/">
                 <h3>Usluge</h3>
@@ -112,7 +108,7 @@ const TopNavContainer = styled.nav`
     ]
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 1000px) {
     .mobhide {
       display: none;
     }

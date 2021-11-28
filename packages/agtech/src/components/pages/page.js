@@ -46,7 +46,7 @@ const Content = styled.div`
     max-width: 1200px;
     margin: 0px auto;
   }
-
+  
   .col-auto {
     margin: auto;
   }
@@ -85,4 +85,12 @@ const Content = styled.div`
       width: 100%;
     }
   }
+  .wp-block-image figcaption {
+    color: #888888!important;
+    font-size: 13px;
+    text-align: center;
+}
+.css-1yb98pw-props-css{
+  background-color:transparent!important;
+}
 `;

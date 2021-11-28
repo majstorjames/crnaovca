@@ -29,14 +29,7 @@ const Footer = ({ state }) => {
               defer
             ></Script> */}
           </div>
-          {/* <div className="footer-widget">
-            <h2 className="widget-title"></h2>
-            <ul className="widget-list">
-              <li><Link className="widget-list-link" link="/">Link 1</Link></li>
-              <li><Link className="widget-list-link" link="/">Link 2</Link></li>
-              <li><Link className="widget-list-link" link="/">Link 3</Link></li>
-            </ul>
-          </div> */}
+
           <div className="footer-widget">
             <h2 className="widget-title">Menu</h2>
             <ul className="widget-list">

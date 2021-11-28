@@ -22,7 +22,7 @@ const Post = ({ state, actions, libraries }) => {
    * the home page, everything is ready and it loads instantly.
    */
   useEffect(() => {
-    actions.source.fetch("/");
+    actions.source.fetch("/blog/");
     List.preload();
   }, []);
 
@@ -92,7 +92,11 @@ const Header = styled.div`
 const BlogHero = styled.div`
   padding: 2rem 0;
   text-align: center;
-  background: linear-gradient(0deg, var(--postbackground) 50%, var(--background) 50%);
+  background: linear-gradient(
+    0deg,
+    var(--postbackground) 50%,
+    var(--background) 50%
+  );
   transition: background 1s;
 
   .blog-hero-inner {

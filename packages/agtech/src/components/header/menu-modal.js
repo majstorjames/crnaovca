@@ -32,9 +32,7 @@ const MenuModal = ({ state }) => {
             <Link className="" link="/">
               <h1>Home</h1>
             </Link>
-            <Link className="" link="/o-nama/">
-              <h1>O Nama</h1>
-            </Link>
+
             <Link className="" link="/usluge/">
               <h1>Usluge</h1>
             </Link>

@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://backend.aamodtgroup.com/sitemap_index.xml
+Sitemap: https://admin.crna-ovca.com/sitemap_index.xml

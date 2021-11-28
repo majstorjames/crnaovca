@@ -219,6 +219,14 @@ const globalStyles = css`
     justify-content: flex-end !important;
     box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px !important;
   }
+  .wp-block-image figcaption {
+    color: #888888!important;
+    font-size: 13px;
+    text-align: center;
+}
+.css-1yb98pw-props-css{
+  background-color:transparent!important;
+}
 `;
 
 const HeadContainer = styled.div`

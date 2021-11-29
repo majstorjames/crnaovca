@@ -39,11 +39,7 @@ const Footer = ({ state }) => {
                 </Link>
               </li>
               <li>
-                <li>
-                  <Link className="widget-list-link" link="/o-nama/">
-                    O nama
-                  </Link>
-                </li>
+
                 <Link className="widget-list-link" link="/portfolio/">
                   Portfolio
                 </Link>
